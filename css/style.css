@@ -1,0 +1,80 @@
+      /* Colors 
+      Background #0b0c10
+      Background Accent #1f2883
+      Text #c5c6c7
+      Accent 1 (Light) #f14e4e
+      Accent 2 (Dark) #812e2e
+      */
+      /* font-family: 'Montserrat', sans-serif;
+      font-family: 'Playfair Display', serif;
+      */
+img {
+    width: 100%;
+  }
+nav {
+  display: block; height: 80px; color: #0b0c10; float: left; padding: 14px 16px; text-align: center; overflow: hidden;
+}
+  .p {
+    font-size: 12px
+  }
+ul {
+  font-size: 18px;
+}
+  body {
+    background-color: #0b0c10; color: #ffff; font-size: 12px; font-weight: 400; line-height: 1.75; 
+  }
+h2 {
+  font-weight: bolder
+}
+  .intro.text {
+    font-size: 24px;
+    }
+  a {
+    color: #ffffff;
+    text-decoration: none; /* No underlining */
+  }
+  a:hover {
+    color: #f14e4e;
+    text-decoration: underline;
+    opacity: 0.8 /* Underlining when hovering over a link */
+  }
+  a:active { /* selected link */
+    color: #812e2e;
+  }
+  a:focus {
+    color: #c5c6c7;
+    text-decoration: underline;
+  }
+
+.logo {
+    max-width: 50px; float: left; padding: 14px 16px;
+  }
+
+.button.contact {
+    background-color: transparent;
+    color: #f14e4e !important;
+    text-transform: uppercase;
+    border: 2px solid #f14e4e;
+  }
+
+  .button.contact:hover {
+    background-color: #812e2e;
+    color: #ffffff !important;
+  }
+
+
+
+  .button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #f14e4e;
+    color: #ffffff !important; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #812e2e; /* width of the border, type, color */
+    transition: 0.2s opacity;
+  }
+  .button:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+  }
