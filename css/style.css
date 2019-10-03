@@ -8,23 +8,101 @@
       /* font-family: 'Montserrat', sans-serif;
       font-family: 'Playfair Display', serif;
       */
+/* Layout styling */
+main {
+  padding-top: 133px;
+  box-sizing: border-box
+}
+.container {
+  padding: 0 15px; 
+  width: auto;
+}
+
+#hero .container h1 {
+    text-align: center;
+    font-family: 'Playfair Display';
+  }
+
+.row {
+    margin: 25px 0;
+  }
+
+#work .row { 
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+ }
+
+header { 
+  width: 100%;
+  background-color: #1f2883;
+  text-align: center;
+  padding: 10px 0;
+  -webkit-box-shadow: 1px 1px 7px 0px rgba(51, 50, 50, 1);
+-moz-box-shadow:    1px 1px 7px 0px rgba(51, 50, 50, 1);
+box-shadow:         1px 1px 7px 0px rgba(51, 50, 50, 1);
+position: fixed;
+}
+
+#hero {
+  background-color: #0b0c10;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.logo {
+  max-width: 50px;
+  padding: 15px 0;
+}
+
+nav {
+  width: 100%
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+nav > ul > li > a:visited {
+  color: #c5c6c7
+}
+
+nav > ul > li > a:hover {
+  color: #812e2e
+}
+
+nav > ul > li > a:active {
+  color: #f14e4e
+}
+
 img {
     width: 100%;
   }
-nav {
-  display: block; height: 80px; color: #0b0c10; float: left; padding: 14px 16px; text-align: center; overflow: hidden;
-}
-  .p {
+
+.p {
     font-size: 12px
   }
-ul {
-  font-size: 18px;
-}
-  body {
+
+body {
     background-color: #0b0c10; color: #ffff; font-size: 12px; font-weight: 400; line-height: 1.75; 
   }
+
 h2 {
   font-weight: bolder
+}
+
+.my_work {
+  column-count: 2;
 }
   .intro.text {
     font-size: 24px;
@@ -33,21 +111,20 @@ h2 {
     color: #ffffff;
     text-decoration: none; /* No underlining */
   }
+
   a:hover {
     color: #f14e4e;
     text-decoration: underline;
     opacity: 0.8 /* Underlining when hovering over a link */
   }
+
   a:active { /* selected link */
     color: #812e2e;
   }
+
   a:focus {
     color: #c5c6c7;
     text-decoration: underline;
-  }
-
-.logo {
-    max-width: 50px; float: left; padding: 14px 16px;
   }
 
 .button.contact {
@@ -62,9 +139,7 @@ h2 {
     color: #ffffff !important;
   }
 
-
-
-  .button {
+  .info_button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #f14e4e;
     color: #ffffff !important; /* needed to override the default link color */
@@ -74,7 +149,11 @@ h2 {
     border-bottom: 2px solid #812e2e; /* width of the border, type, color */
     transition: 0.2s opacity;
   }
-  .button:hover {
+
+  .info_button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
   }
+footer {
+  font-size: 12pt; font-family: 'Playfair Display'; text-align: center; display: block; 
+}
