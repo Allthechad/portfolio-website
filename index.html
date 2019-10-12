@@ -6,29 +6,24 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <meta charset="utf-8">
         <link rel="icon" type="image/png" href="img/ck_logo_2019_k.png">
+        <script src="https://kit.fontawesome.com/1a0425a9f3.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:900&display=swap" rel="stylesheet">
-        <title>About Chad Ketcham UX Designer Dallas</title>
-        <style> body {
-          font-family: 'Montserrat', serif;
-          font-size: 28px;
-        }
-      </style>
+        <title>Chad Ketcham UX Designer Dallas</title>
       </head>
 
       <body>
-      <header>
-            <div class="container">
+          <header>
               <nav>
-                <div class="logo">
-                  <a href="index.html">
-                  <img src="img/ck_logo_2019_grey.png" /></a></div>
+                  <div class="navtoggle" id="myNavtoggle">
+                    <img id="logo" src="img/ck_logo_2019_grey.png" alt="Chad Ketcham Logo">
                     <ul>
                      <li><a href="#work">Work</a></li>
                      <li><a href="about.html">About</a></li>
                      <li><a href="contact.html">Contact</a></li>
+                     <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
                     </ul>
-               </nav>
-            </div>
+                  </div>
+              </nav>
           </header>
         
       <main>
@@ -42,15 +37,16 @@
 
         <!-- EXPLOR Box. -->  
         <div class="row">
-            <div class="col col-md-6 col-lg-7">
+            <div class="col col-sm 12 col-md-6 col-lg-5">
               <picture>
-                <source srcset="img/explor/explor_header_x4" media="(max-width:767px)">
+                <source srcset="img/explor/explor_header_x1.jpg" media="(max-width:767px)">
                 <img src="img/explor/final_ui.gif" alt="EXPLOR">
               </picture>
+              <div class="col_text">
             <h3>EXPLOR</h3>
               <p>
-                EXPLOR is a photo, social scavenger hunt app, designed to lead people
-                to local landmarks and hot spots as they make memories with friends.
+                EXPLOR is a photo, social scavenger hunt app, designed to take people
+                on a journey to local landmarks and hot spots.
               </p>
               <p>
                 Skills: User Testing, Wireframing, User Surveys, UI Design
@@ -58,15 +54,15 @@
               </p>
             <div class="info_button"><a href="explor.html">Read more</a></div>
           </div>
-        </div>
+          </div>
 
         <!-- Vocap Box. -->  
-          <div class="row">
-            <div class="col col-md-6 col-lg-5">
+            <div class="col col-sm 12 col-md-6 col-lg-5">
               <picture>
                 <source srcset="img/vocap/vocap_hero.jpg" media="(max-width:767px)">
                 <img src="img/vocap/vocap_hero.jpg" alt="vocap">
               </picture>
+              <div class="col_text">
               <h3>Vocap</h3>
               <p>
                 Vocap is a vocabulary study app, used to help people learn new
@@ -78,11 +74,13 @@
               </p>
               <div class="info_button"><a href="vocap.html">Read more</a></div>
             </div>
+            </div>
+            </div>
           </div>
 
         <!-- Test Box. -->  
           <div class="row">
-            <div class="col col-md-6 col-lg-5">
+            <div class="col col-sm 12 col-md-6 col-lg-5">
               <div class="coffee">
                 <picture>
                   <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 96 138">
@@ -94,6 +92,7 @@
                   </svg>
                 </picture>
                 </div>
+                <div class="col_text">
                 <h3>Latte</h3>
                   <p>
                     Coffee is good. 
@@ -103,8 +102,8 @@
                   </p>
                 <div class="info_button"><a href="vocap.html">Read more</a></div>
                </div>
+               </div>
               </div>
-            </div>
           </main>
 
     <!-- Footer -->  
@@ -118,10 +117,13 @@
               <li> Copyright 2019®</li>
             </ul>
           </p>
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
+          <i class="fab fa-linkedin-in"> <a href="www.linkedin.com/in/chadketcham" ></a> </i>
         </div>
       </footer>
-    <script src="js/script.js"></script>
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+      <script src="js/scripts.js"></script>
   </body>
 </html>

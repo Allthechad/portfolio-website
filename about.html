@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="img/ck_logo_2019_k.png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:900&display=swap" rel="stylesheet">
-    <title>About Chad Ketcham UX Designer Dallas</title>
-    <style> body {
-      font-family: 'Montserrat', serif;
-      font-size: 28px;
-    }
-  </style>
-  </head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="img/ck_logo_2019_k.png">
+        <script src="https://kit.fontawesome.com/1a0425a9f3.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:900&display=swap" rel="stylesheet">
+        <title>About Chad Ketcham UX Designer Dallas</title>
+      </head>
   <body>
       <header>
-          <div class="container">
-            <nav>
-              <div class="logo"><a href="index.html">
-              <img src="img/ck_logo_2019_grey.png" /></a></div>
-               <ul>
-                <li><a href="#work">Work</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
+          <nav>
+              <div class="navtoggle" id="myNavtoggle">
+                <img id="logo" src="img/ck_logo_2019_grey.png" alt="Chad Ketcham Logo" >
+                <ul>
+                 <li><a href="index.html/Work">Work</a></li>
+                 <li><a href="about.html">About</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+                 <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+                </div>
+          </nav>
+      </header>
           <main>
+            <div class="container">
+              <div class="about">
+                <picture>
+                  <img src="img/ck_headshot.jpg" alt="Picture of me">
+                </picture>
+                <p>
+                    Using my nearly ten years of design experience, I create solutions that are both visually appealing and functional. People face real challenges and hardships every day. Being able to use an app or website shouldn't be one of them. Working with people to identify challenges and creating innovative solutions to remove them from the equation is why I'm excited to get up in the morning. 
+                    I've found my niche in UX design and will continue to infuse my previous design skillsets to develop creative solutions that remove barriers and improve usability.
+                    Aside from living in the world of design, I love drinking honey lavender lattes with my fiance, lifting weights at the gym, and turning my nerd level up to 10 watching Marvel movies.
+                    Feel free to connect or chat. You can find me via <a href="https://www.linkedin.com/in/chadketcham/" > LinkedIn </a> or <a href="mailto:ketchamchad@gmail.com" > email.</a>
+                </p>
+              </div>
+            </div>
           <div class="about">
             <div class="row">
               <div class="col-md-6 col-lg-7">
@@ -91,6 +100,10 @@
             <a href="#" class="fa fa-twitter"></a>
           </div>
           </footer>
-          <script src="js/script.js"></script>
+          <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+          <script src="js/scripts.js"></script>
   </body>
 </html>

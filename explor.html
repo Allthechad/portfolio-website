@@ -6,48 +6,51 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <meta charset="utf-8">
         <link rel="icon" type="image/png" href="img/ck_logo_2019_k.png">
+        <script src="https://kit.fontawesome.com/1a0425a9f3.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:900&display=swap" rel="stylesheet">
         <title>About Chad Ketcham UX Designer Dallas</title>
-        <style> body {
-          font-family: 'Montserrat', serif;
-          font-size: 28px;
-        }
-      </style>
       </head>
   <body>
       <header>
-          <div class="container">
-            <nav>
-              <div class="logo"><a href="index.html">
-              <img src="img/ck_logo_2019_grey.png" /></a></div>
-               <ul>
-                <li><a href="#work">Work</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
+          <nav>
+              <div class="navtoggle" id="myNavtoggle">
+                <img id="logo" src="img/ck_logo_2019_grey.png" alt="Chad Ketcham Logo">
+                <ul>
+                 <li><a href="index.html#work">Work</a></li>
+                 <li><a href="about.html">About</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+                 <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+              </div>
+          </nav>
+      </header>
      <main>
+       <div class="row">
         <div class="container">
           <picture>
                 <img src="img/explor/final_ui.gif" width="auto" alt="EXPLOR">
           </picture>
+          </div>
+       </div>
+       <div class="row">
+          <div class= "prob_text">
           <p>
               <h3>Problem Statement:</h3>
               People who love games, and more specifically scavenger hunt players, want an experience that is easy to use, fun and doesn’t hide good features behind a paywall.<br> Users want simple and intuitive interfaces. They also want to share the experience both in-person and on social media.
           </p>
+          </div>
         </div>
         <div class="row">
-            <div class="col col-md-6 col-lg-5">
+            <div class="col col-sm 12 col-md-6 col-lg-5">
             <picture>
                   <img src="img/explor/interviews.jpg" alt="Interviews">
             </picture>
             </div>
-            <div class="col col-md-6 col-lg-5">    
+            <div class="col col-sm 12 col-md-6 col-lg-5"> 
+              <div class="explor_text_in_boxes">
             <p>
                 <h3>Interviews</h3>
-                <div class="intro text">After developing the problem statement I interviewed five people to better understand their perspective on mobile games, scavenger hunts and sharing experiences on social media.</div>                
+                <div class="intro_text">After developing the problem statement I interviewed five people to better understand their perspective on mobile games, scavenger hunts and sharing experiences on social media.</div>                
                 <h4>Goals:</h4>
                 <ul>
                 <li>How people share experiences on social media</li>
@@ -65,17 +68,18 @@
             </p>
             </div>
             </div>
+            </div>
             <div class="row">
-                <div class="col col-md-6 col-lg-5">    
+                <div class="col col-sm 12 col-md-6 col-lg-5">    
                 <picture>
                       <img src="img/explor/personas.jpg" alt="Personas">
                 </picture>
                 </div>
-                <div class="col col-md-6 col-lg-5">
+                <div class="col col-sm 12 col-md-6 col-lg-5">
+                  <div class="explor_text_in_boxes">
+                  <p>
                     <h3>Personas</h3>
-                    <div class="intro text">Using the insights gained from the User Interviews I put together three personas to represent the bulk of the target users. These helped direct my decisions throughout the entire design process.</div>
-                    </div>
-                      <p>
+                    <div class="intro_text">Using the insights gained from the User Interviews I put together three personas to represent the bulk of the target users. These helped direct my decisions throughout the entire design process.</div>
                     <h4>Goals:</h4>
                     <ul>
                     <li>Create representatives of larger groups of users</li>
@@ -85,8 +89,11 @@
                   </ul>
                 </p>
                 </div>
+                </div>
+              </div>
               <div class="row">
-              <div class="col col-md-6 col-lg-5">
+              <div class="col col-sm 12 col-md-6 col-lg-5">
+                  <div class="explor_text_in_boxes">
                 <p>
                 <h3>User Journey</h3>
                 With the user personas in hand, I created a user journey for each of the personas. These gave me a starting point to test with users to see if my direction for the app was sound and how it could be refined.
@@ -100,14 +107,16 @@
                 </ul>
               </p>
               </div>
-              <div class="col col-md-6 col-lg-5">
+              </div>
+              <div class="col col-sm 12 col-md-6 col-lg-5">
               <picture>
                       <img src="img/explor/user_journey.png" alt="User Journey">
                 </picture>
             </div>
             </div>
             <div class="row">
-              <div class="col col-md-6 col-lg-5">
+              <div class="col col-sm 12 col-md-6 col-lg-5">
+                  <div class="explor_text_in_boxes">
               <p>
                 <h3>Card Sorting</h3>
                 <div class="intro text">
@@ -121,14 +130,16 @@
                 </ul>
               </p>
               </div>
-              <div class="col col-md-6 col-lg-5">
+              </div>
+              <div class="col col-sm 12 col-md-6 col-lg-5">
                 <picture>
                       <img src="img/explor/card_sorting.png" alt="Card Sorting">
                 </picture>
                 </div>
             </div>
           <div class="row">
-            <div class="col col-md-6 col-lg-5">
+            <div class="col col-sm 12 col-md-6 col-lg-5">
+                <div class="explor_text_in_boxes">
             <h3>Sketching</h3>
             <p>
                <div class="intro text"> I began the design process by sketching options for the main screens of the scavenger hunt app. </div>
@@ -141,19 +152,21 @@
                </ul>
                </p>
               </div>
-               <div class="col col-md-6 col-lg-5">
+            </div>
+               <div class="col col-sm 12 col-md-6 col-lg-5">
                <picture>
                     <img src="img/explor/sketches.jpg" alt="Sketching">
               </picture>
               </div>
           </div>
           <div class="row">
-              <div class="col col-md-6 col-lg-5">
+              <div class="col col-sm 12 col-md-6 col-lg-5">
               <picture>
                     <img src="img/explor/wireframe.jpg" alt="Wireframe">
               </picture>
               </div>
-              <div class="col col-md-6 col-lg-5">
+              <div class="col col-sm 12 col-md-6 col-lg-5">
+                  <div class="explor_text_in_boxes">
               <p>
               <h3>Wireframes</h3>
               <div class="intro text">With an idea of the basic layout, I moved to wireframing. The wireframes were created using Adobe Illustrator and XD.</div>
@@ -167,8 +180,10 @@
             </p>
             </div>
             </div>
+            </div>
           <div class="row">
-          <div class="col col-md-6 col-lg-5">
+          <div class="col col-sm 12 col-md-6 col-lg-5">
+              <div class="explor_text_in_boxes">
             <p>
               <h3>User Testing</h3>
               <div class="intro text">After developing the wireframes they were then tested with users. I chose six participants that matched the user personas and used moderated in-person testing. The participants were then asked to complete two tasks on both mobile and desktop versions. They were also asked open-ended questions about their experience and asked to talk through their decisions as they made them. </div>
@@ -180,14 +195,16 @@
             </ul>
             </p>
             </div>
-            <div class="col col-md-6 col-lg-5">
+          </div>
+            <div class="col col-sm 12 col-md-6 col-lg-5">
               <picture>
-                    <img src="img/explor/user_testing_screens.jpg" alt="Wireframe">
+                    <img src="img/explor/user_testing_screen.png" alt="Wireframe">
               </picture>
           </div>
           </div>
           <div class="row">
-            <div class="col col-md-6 col-lg-5">
+            <div class="col col-sm 12 col-md-6 col-lg-5">
+                <div class="explor_text_in_boxes">
             <p>
             <h3>High-Fidelity Prototypes</h3>
             <div class="intro text">With the feedback from user testing, I created several rounds of mid-fidelity prototypes which I again tested with a group of users. Based on the feedback from those tests I was able to create high-fidelity prototypes using Adobe Photoshop, Illustrator and XD. These included colors, a more finished feel and most of the flow of the experience. These were shared with fellow designers to get feedback on the final design. </div>
@@ -200,14 +217,16 @@
               </ul>
           </p>
           </div>
-          <div class="col col-md-6 col-lg-5">
+            </div>
+          <div class="col col-sm 12 col-md-6 col-lg-5">
           <picture>
                 <img src="img/explor/hi_fid_phone_slide.gif" media="(max-width:400px)" alt="EXPLOR">
           </picture>
           </div>
           </div>
           <div class="row">
-            <div class="col col-md-6 col-lg-5">
+            <div class="col col-sm 12 col-md-6 col-lg-5">
+                <div class="explor_text_in_boxes">
             <p>
             <h3>Accessibility Testing and Final Design</h3>
             <div class="intro text">After most of the screens were created I checked the accessibility of the app against WCAG guidelines. In the places it was lacking I made improvements, particularly colors and font sizes.
@@ -223,14 +242,16 @@
             </ul>
               </p>
               </div>
-              <div class="col col-md-6 col-lg-5">
+            </div>
+              <div class="col col-sm 12 col-md-6 col-lg-5">
               <picture>
                     <img src="img/explor/final_ui.gif" media="(max-width:400px)" alt="EXPLOR">
               </picture>
           </div>
           </div>
           <div class="row">
-              <div class="col col-md-6 col-lg-5">
+              <div class="col col-sm 12 col-md-6 col-lg-5">
+                  <div class="explor_text_in_boxes">
             <p>
               <h3>Design System</h3>
               <p class="intro text">Finally, I built the design system using Adobe Illustrator, XD, and Photoshop.</p>
@@ -243,10 +264,15 @@
               </ul>
               </p>
             </div>
-            <div class="col col-md-6 col-lg-5">
+              </div>
+            <div class="col col-sm 12 col-md-6 col-lg-5">
                 <picture>
                     <img src="img/explor/design_system.jpg" media="(max-width:400px)" alt="EXPLOR">
                 </picture>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col col-sm 12 col-md-6 col-lg-5">
                 <h3>Final Design Presentation</h3>
                 <video width="800" controls>
                     <source src="img/explor/explor_presentation.mp4" type="video/mp4">
@@ -268,6 +294,10 @@
         <a href="#" class="fa fa-twitter"></a>
       </div>
       </footer>
-      <script src="js/script.js"></script>
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+      <script src="js/scripts.js"></script>
   </body>
 </html>
