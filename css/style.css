@@ -19,6 +19,15 @@ header {
   padding: 10px 0 4px;
 }
 
+body {
+  background-color: #0b0c10;
+  color: #ffff;
+  font-weight: 400; 
+  line-height: 1.75; 
+  font-family: 'Montserrat', serif;
+  font-size: 12px;
+}
+
 h2 {
   text-align: center;
   padding: 10;
@@ -37,6 +46,10 @@ h2 {
 
 #logo a:hover {
     opacity: 0.2;
+}
+
+nav > li {
+padding: 0 15px 0 15px;
 }
 
 .navtoggle {
@@ -72,10 +85,10 @@ h2 {
 
 .navtoggle, .navtoggle.responsive {
   position: relative;
+  
 }
 
 .navtoggle > ul > li > a {
-  padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #ffffff;
@@ -146,12 +159,12 @@ h2 {
     text-align: left;
     font-family: 'Playfair Display'; 
     font-size: 5em;
-    padding: 0 .5em 0 .5em;
+    padding: 1em .5em 0 .5em;
   }
 
 .row {
     display: flex;
-    margin: 25px 0;
+    margin: 21px auto;;
     padding: 15px;
   }
 
@@ -231,20 +244,14 @@ img {
     width: 100%;
   }
 
-body {
-    background-color: #0b0c10;
-    color: #ffff;
-    font-weight: 400; 
-    line-height: 1.75; 
-    font-family: 'Montserrat', serif;
-    font-size: 12px;
-}
+
 
 .explor_text_in_boxes {
   text-align: left;
   font-size: 14px;
   padding: 0 2em 2em 2em; 
 }
+
 h2 {
   font-weight: bolder;
   font-size: 3em;
@@ -350,7 +357,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
 
   .navtoggle > ul {
-    margin: 1em 0;
+    margin: 0;
   }
 
   .navtoggle li:last-child {
@@ -383,6 +390,11 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
+
+  .navtoggle > ul {
+    margin: 0;
+  }
+
   .navtoggle li:last-child {
     display: none;
   }
@@ -390,6 +402,7 @@ Large devices (1024px or larger)
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
   .col-lg-5 {
     width: 40%;
   }
@@ -412,6 +425,10 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 
+  .navtoggle > ul {
+    margin: 0;
+  }
+
   .navtoggle li:last-child {
     display: none;
   }
@@ -420,11 +437,20 @@ X-large devices (1440px or larger)
     display: inline-block;
   }
 
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+  }
+  
   header {
     text-align: unset;
   }
 .navtoggle {
   width: auto;
+
   margin-top: 4px;
 }
 }
