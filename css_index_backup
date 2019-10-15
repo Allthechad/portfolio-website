@@ -1,0 +1,502 @@
+      /* Colors 
+      Background #0b0c10
+      Background Accent #1f2883
+      Text #c5c6c7
+      Accent 1 (Light) #f14e4e
+      Accent 2 (Dark) #812e2e
+      */
+      /* font-family: 'Montserrat', sans-serif;
+      font-family: 'Playfair Display', serif;
+      */
+
+/* Layout styling */
+main {
+  padding-top: 56px;
+  box-sizing: border-box
+}
+
+header {
+  padding: 10px 0 4px;
+}
+
+body {
+  background-color: #0b0c10;
+  color: #ffff;
+  font-weight: 400; 
+  line-height: 1.75; 
+  font-family: 'Montserrat', serif;
+  font-size: 12px;
+}
+
+h2 {
+  text-align: center;
+  padding: 10;
+  color: #f14e4e;
+  font-weight: bolder;
+}
+
+#logo {
+  float: left;
+  max-width: 50px;
+  margin: 0 1em;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  opacity: 1;
+}
+
+#logo a:hover {
+    opacity: 0.2;
+}
+
+nav > li {
+padding: 0 15px 0 15px;
+}
+
+.navtoggle {
+  text-align: center;
+  font-size: 2em;
+}
+
+.navtoggle> ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+  
+}
+
+.navtoggle > ul > li > a {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.navtoggle > ul > li > a:visited {
+  color: #c5c6c7
+}
+
+.navtoggle > ul > li > a:hover {
+  color: #f14e4e
+}
+
+.navtoggle > ul > li > a:active {
+  color: #c5c6c7;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.aboutme_title {
+  text-align: left;
+  font-weight: 800;
+  font-size: 2em;
+  padding: 1em;
+}
+
+.about_me_text {
+  font-size: 2em;
+}
+
+.skills_tools {
+  text-align: left;
+}
+
+.row_aboutme {
+  text-align: left
+}
+
+.row_footer {
+  text-align: center;
+  clear: both;
+}
+
+.col > p {
+  padding: 0 3em;
+}
+
+.col {
+  flex: 1;
+  margin: 1em;
+  padding: 0;
+  background-color: #e0e0e0;
+  text-align: center;
+  color: #0b0c10;
+  float: left;
+}
+
+.col_text {
+  padding: 2em;
+
+}
+
+.skills_tools > ul > li {
+  list-style-type: none;
+  font-size: 1em;
+}
+
+#hero .container h1 {
+    text-align: left;
+    font-family: 'Playfair Display'; 
+    font-size: 5em;
+    padding: 1em .5em 0 .5em;
+  }
+
+.row {
+    display: flex;
+    margin: 21px auto;;
+    padding: 15px;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+#work .row { 
+  padding-bottom: 25px;
+ }
+
+ .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: bolder; 
+}
+
+ #about-page h3 { margin-top: 0;}
+ 
+ #exlpor > ul > li{
+  text-align: left;
+ }
+ 
+header { 
+  width: 100%;
+  background-color: #0b0c10;
+  padding: 10px 0;
+  position: fixed;
+}
+
+#hero {
+  background-color: #0b0c10;
+  padding: 20px 0;
+  display: block;
+  width: 100%;
+}
+
+#hero span {
+  display: block;
+}
+
+.prob_text {
+ font-size: 2em;
+ text-align: center;
+ padding: 0 2em;
+ margin: 0 0 10 0; 
+}
+
+.coffee {
+  width: 25%;
+  padding: 40px;
+    -webkit-transition: -webkit-transform .8s;
+    -ms-transition: -ms-transform .8s;
+    transition: transform .8s;
+    display: block;
+    margin: auto;
+}
+
+.coffee:hover {
+  transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+}
+
+img {
+    width: 100%;
+  }
+
+.explor_text_in_boxes {
+  text-align: left;
+  font-size: 14px;
+  padding: 0 2em 2em 2em; 
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 3em;
+}
+
+.col-sm-12 {
+  width: 100%;
+}
+
+   .button {
+  display: inline-block;
+  color: white !important;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+}
+  a {
+    color: #ffffff;
+    text-decoration: none; /* No underlining */
+  }
+
+  a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.8 /* Underlining when hovering over a link */
+  }
+
+  a:active { /* selected link */
+    color: #812e2e;
+  }
+
+  a:focus {
+    color: #c5c6c7;
+    text-decoration: none;
+  }
+
+.button_contact {
+    background-color: transparent;
+    color: #f14e4e !important;
+    text-transform: uppercase;
+    border: 2px solid #f14e4e;
+    width: 8em;
+    height: 2em;
+    font-size: 2em;
+    text-align: center;
+    clear: both;
+  }
+
+  .button_contact:hover {
+    background-color: #812e2e;
+    color: #ffffff !important;
+  }
+
+  .button_contact_email {
+    background-color: transparent;
+    color: #f14e4e !important;
+    text-transform: uppercase;
+    border: 2px solid #f14e4e;
+    width: 100px;
+    height: 40px;
+
+  }
+
+  .button_contact_email:hover {
+    background-color: #812e2e;
+    color: #ffffff !important;
+  }
+
+  .info_button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #f14e4e;
+    color: #ffffff !important; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #812e2e; /* width of the border, type, color */
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+
+  .info_button:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none; color: #ffffff
+  }
+
+footer {
+  font-size: 12pt; text-align: center; display: inline; 
+}
+
+/* ==============================
+Small devices (640px and under)
+================================= */
+@media only screen and (max-width: 640px) {
+  .navtoggle .icon{
+    display: block;
+  }
+
+  .navtoggle li {
+    display: none;
+  }
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+.col-md-6 {
+    width: 50%;
+  }
+
+  header {
+    text-align: unset;
+    height: 60px;
+  }
+  
+  .navtoggle {
+    width: auto;
+  
+    margin-top: 4px;
+  }
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  .navtoggle > ul {
+    margin: 0;
+  }
+
+  .navtoggle .icon {
+    display: none;
+  }
+
+  .navtoggle .icon {
+    display: none;
+  }
+
+  .navtoggle.responsive li {
+    display: none;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+.col-lg-6 {
+    width: 50%;
+  }
+
+  header {
+    text-align: unset;
+  }
+  .navtoggle {
+    width: auto;
+
+    margin-top: 4px;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+
+  .navtoggle > ul {
+    margin: 0;
+  }
+
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+  }
+  
+  header {
+    text-align: unset;
+  }
+.navtoggle {
+  width: auto;
+  margin-top: 4px;
+}
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+  .navtoggle > ul {
+    margin: 0;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+  }
+  
+  header {
+    text-align: unset;
+  }
+.navtoggle {
+  width: auto;
+
+  margin-top: 4px;
+}
+}

@@ -1,13 +1,13 @@
 console.log("Hello World")
 
 function myNavtoggle() {
-    var x = document.getElementById("myNavtoggle");
-    if (x.className === "navtoggle") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
   }
+}
 
   $(function() {
     // $('a[href*=#]:not([href=#])').click(function() { change to below
