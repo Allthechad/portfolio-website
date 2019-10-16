@@ -9,15 +9,24 @@
       font-family: 'Playfair Display', serif;
       */
 /* Layout styling */
+
+
+#explor {
+  margin: auto 0;
+  max-width: 1200px;
+  align-items: center;
+  vertical-align: baseline;
+}
+
 main {
+  max-width: 1200px;
+  margin: auto;
   padding-top: 56px;
-  box-sizing: border-box;
 }
 header {
   padding: 10px 0 4px;
 }
 body {
-  margin: auto;
   position: relative;
   background-color: #0b0c10;
   color: #ffff;
@@ -25,8 +34,6 @@ body {
   line-height: 1.75;
   font-family: 'Montserrat', serif;
   font-size: 12px;
-  width: 100%;
-  height: 100%;
 }
 h2 {
   text-align: center;
@@ -107,6 +114,7 @@ nav > li {
   position: absolute;
   right: 0;
   top: 2px;
+  bottom: 4px;
   font-size: 20px;
   padding: 20px;
 }
@@ -145,6 +153,12 @@ nav > li {
   font-size: 1em;
 }
 
+.ex_sec {
+  margin: 80px 200px;
+  align-items: center;
+  display: block;
+}
+
 .row {
   display: inline-block;
   margin: 21px auto;
@@ -170,6 +184,7 @@ nav > li {
   padding: 15px;
 }
 h3 {
+  font-family: 'Playfair Display', serif;
   font-size: 2em;
   font-weight: bolder;
 }
@@ -179,6 +194,8 @@ h3 {
 #exlpor > ul > li {
   text-align: left;
 }
+
+
 header {
   width: 100%;
   background-color: #0b0c10;
@@ -189,22 +206,18 @@ header {
   position: fixed;
 }
 #hero {
-
   font-family: 'Playfair Display', serif;
-  padding: 20px 0;
-  display: block;
+  margin: 0 40px;
   width: 100%;
   font-size: 2em;
+  
 }
 
-#hero span {
-  display: block;
-}
 
 .prob_text {
   font-size: 2em;
   text-align: center;
-  padding: 0 2em;
+  padding: 2em;
   margin: 0 0 10 0;
 }
 
@@ -381,6 +394,7 @@ X-large devices (1440px or larger)
 .grid {
   min-height: 100%;
   display: grid;
+  align-items: center;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
 }
@@ -410,4 +424,7 @@ X-large devices (1440px or larger)
   .module {
     margin: 0;
   }
+}
+footer {
+  text-align: center;
 }
