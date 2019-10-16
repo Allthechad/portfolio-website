@@ -1,0 +1,59 @@
+/* Colors
+      Background #0b0c10
+      Background Accent #1f2883
+      Text #c5c6c7
+      Accent 1 (Light) #f14e4e
+      Accent 2 (Dark) #812e2e
+      */
+/* font-family: 'Montserrat', sans-serif;
+      font-family: 'Playfair Display', serif;
+      */
+/* Layout styling */
+
+
+
+.hero {
+    font-style: 'Playfair Display', serif;
+    background-image: url("/img/explor/chad_ux_site_header.jpg");
+    background-size: cover;
+    padding: 4rem 2rem;
+  
+    /* Grid styles */
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .work {
+    /* this is the same as grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    /* this is the same as grid-template-rows: 300px 300px; */
+    grid-template-rows: repeat(2, 300px);
+  }
+
+  .work > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+  }
+
+  body {
+    font-family:'Montserrat', sans-serif;
+    margin: 2rem auto;
+    width: 95%;
+  }
+
+
+  h2, p {
+    margin: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .boxes > * {
+    padding: .5rem;
+    background-color: #333;
+    color: white;
+  }
