@@ -20,7 +20,6 @@
                      <li><a href="#work">Work</a></li>
                      <li><a href="about.html">About</a></li>
                      <li><a href="contact.html">Contact</a></li>
-                    
                      <a href="javascript:void(0);" class="icon"
                       onclick="myNavtoggle()"><i class="fas fa-bars"></i></a>
                     </ul>
@@ -28,37 +27,44 @@
               </nav>
           </header>
         
-      <main>
+      <main style="max-width: 1200px;
+      margin: 0 auto">
         <div id="hero">
-          <div class="container">
-            <h1>I'm an analytical, process-driven and collaborative designer who thrives at the intersection of data driven design, user research and business goals.</h1>
+              <h1>I'm an analytical, process-driven and collaborative designer who thrives at the intersection of data driven design, user research and business goals.</h1>
         </div>
-      </div>
-      <div id="work">
+        <div id="work">
         <h2>My Work</h2>
 
-        <!-- EXPLOR Box. -->  
-        <div class="row">
-            <div class="col col-sm-12 col-md-6 col-lg-5">
-              <picture>
-                <source srcset="img/explor/explor_header_x1.jpg" media="(max-width:767px)">
-                <img src="img/explor/final_ui.gif" alt="EXPLOR">
-              </picture>
-              <div class="col_text">
-            <h3>EXPLOR</h3>
-              <p>
-                EXPLOR is a photo, social scavenger hunt app.
-              </p>
-            <div class="info_button"><a href="explor.html">Read more</a></div>
-          </div>
-          </div>
+        <!-- EXPLOR Box. --> 
+        
+            ​        <div class="grid">
+                      <div class="module">
+                        <div class="item1">
+                          <picture>
+                            <source srcset="img/explor/explor_header_x4.jpg"
+                              media="(max-width:767px)">
+                            <img src="img/explor/final_ui.gif" alt="EXPLOR">
+                          </picture>
+                        </div>
+                        <div class="item2">
+                          <div class="col_text">
+                            <h3>EXPLOR</h3>
+                            <p>
+                              EXPLOR is a photo, social scavenger hunt app.
+                            </p>
+                            <div class="info_button"><a href="explor.html">Read more</a></div>
+                          </div>
+                        </div>
 
         <!-- Vocap Box. -->  
-            <div class="col col-sm-12 col-lg-6 col-lg-5">
+            <div class="module">
+              <div class="item1">
               <picture>
                 <source srcset="img/vocap/vocap_hero.jpg" media="(max-width:767px)">
                 <img src="img/vocap/vocap_hero.jpg" alt="vocap">
               </picture>
+              </div>
+              <div class="item2">
               <div class="col_text">
               <h3>Vocap</h3>
               <p>
@@ -66,52 +72,12 @@
               </p>
               <div class="info_button"><a href="vocap.html">Read more</a></div>
             </div>
-            </div>
-            </div>
           </div>
-
-        <!-- Test Box. -->  
-          <div class="row">
-            <div class="col col-sm-12 col-lg-6 col-lg-5">
-              <div class="coffee">
-                <picture>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 96 138">
-                      <path fill="#5b3200" d="M78.11 135.33H17.89l-4.8-57.6h69.38z"/>
-                      <path fill="#d6bfa5" d="M82.69 87.31H13.38L7.85 21.02h79.86z"/>
-                      <g>
-                        <path d="M96 24.05L91.64 7.04h-5.02V5.29c0-2.88-2.36-5.24-5.24-5.24H14.62c-2.88 0-5.24 2.36-5.24 5.24v1.75H4.36L0 24.05h6.96l8.53 113.89h65.02l8.53-113.89H96zM78.08 135.33H17.92L9.59 24.05h76.83l-8.34 111.28z" fill="#fffcde"/>
-                      </g>
-                  </svg>
-                </picture>
-                </div>
-                <div class="col_text">
-                <h3>Latte</h3>
-                  <p>
-                    Coffee is good. 
-                  </p>
-                  <p>
-                    Skills: Stirring, Boiling Water, Drinking, Enjoying
-                  </p>
-                <div class="info_button"><a href="vocap.html">Read more</a></div>
-               </div>
-               </div>
-              </div>
+          </div>
+          </div>
+          </div>
+          </div>
           </main>
-
-    <!-- Footer -->  
-      <footer>
-        <div class="container">
-          <p> 
-            <ul style="list-style-type:none">
-              <li>Like what you see?</li>
-              <li>Get in touch!</li>
-              <li><button class="button_contact_email"><a href="mailto:ketchamchad@gmail.com">Email me</a></button></li>
-              <li>Copyright 2019®</li>
-            </ul>
-          </p>
-          <i class="fab fa-linkedin-in"> <a href="www.linkedin.com/in/chadketcham" ></a> </i>
-        </div>
-      </footer>
       <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
