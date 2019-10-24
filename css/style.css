@@ -5,8 +5,8 @@
       Accent 1 (Light) #f14e4e
       Accent 2 (Dark) #812e2e
       */
-/* font-family: 'Montserrat', sans-serif;
-      font-family: 'Playfair Display', serif;
+/*  font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
       */
 /* Layout styling */
 
@@ -50,6 +50,7 @@ h2 {
   opacity: 1;
   left: 0;
 }
+
 #logo a:hover {
   opacity: 0.2;
 }
@@ -67,6 +68,7 @@ nav > li {
 .navtoggle > li {
   padding: 0 20px;
 }
+
 .navtoggle > ul {
   background: #0b0c10;
   float: right;
@@ -101,15 +103,19 @@ nav > li {
   font-weight: 700;
   color: #ffffff;
 }
+
 .navtoggle > ul > li > a:visited {
   color: #c5c6c7;
 }
+
 .navtoggle > ul > li > a:hover {
   color: #f14e4e;
 }
+
 .navtoggle > ul > li > a:active {
   color: #c5c6c7;
 }
+
 .navtoggle .icon {
   position: absolute;
   right: 0;
@@ -122,41 +128,31 @@ nav > li {
 .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle.responsive nav {
   padding: 24px;
 }
+
 .navtoggle.responsive li {
   display: block;
   padding: 10px;
   border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
+
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-.col > p {
-  padding: 0 3em;
-}
-.col {
-  flex: 1;
-  margin: 1em;
-  padding: 0;
-  background-color: #e0e0e0;
-  text-align: center;
-  color: #0b0c10;
-  float: left;
-}
-.col_text {
-  padding: 2em;
-}
-.skills_tools > ul > li {
-  list-style-type: none;
-  font-size: 1em;
+
+.explor_head_pic {
+  width: auto;
 }
 
-.ex_sec {
-  margin: 80px 200px;
+.skills_tools {
+  list-style-type: none;
+  font-size: 1.5em;
   align-items: center;
-  display: block;
+  padding: 0 40px;
+  margin: 0 80px;
 }
 
 .row {
@@ -195,7 +191,15 @@ h3 {
   text-align: left;
 }
 
+.skills_tools_section {
+  align-items: center;
+}
 
+.skill_tools_title {
+  font-size: 2em;
+  align-items: center;
+  margin: 0 40px;
+}
 header {
   width: 100%;
   background-color: #0b0c10;
@@ -205,14 +209,6 @@ header {
   box-shadow: 1px 1px 7px 0px rgba(51, 50, 50, 1);
   position: fixed;
 }
-#hero {
-  font-family: 'Playfair Display', serif;
-  margin: 0 40px;
-  width: 100%;
-  font-size: 2em;
-  
-}
-
 
 .prob_text {
   font-size: 2em;
@@ -267,6 +263,7 @@ a:focus {
   text-decoration: none;
 }
 .button.contact {
+  align-content: center;
   background-color: transparent;
   color: #f14e4e !important;
   text-transform: uppercase;
@@ -286,20 +283,28 @@ a:focus {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #812e2e; /* width of the border, type, color */
-  opacity: 0.6;
-  transition: 0.3s;
 }
 
 .info_button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
   color: #ffffff;
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 /* ==============================
 Small devices (640px and under)
 ================================= */
 @media only screen and (max-width: 640px) {
+
+  #hero {
+    font-family: 'Playfair Display', serif;
+    margin: 40px;
+    width: auto;
+    font-size: 1rem;
+    
+  }
 
   .navtoggle .icon {
     display: block;
@@ -327,6 +332,23 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   .navtoggle > ul {
     margin: 0;
+  }
+
+  #hero {
+    font-family: 'Playfair Display', serif;
+    margin: 40px;
+    width: auto;
+    font-size: 1rem;
+  }
+
+  picture {
+    max-width: 400;
+  }
+
+  .ex_sec {
+    margin: 40px 100px;
+    align-items: center;
+    display: block;
   }
 
   .navtoggle .icon {
@@ -360,12 +382,62 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 }
+.intro_text {
+  font-size: 15px;
+}
+
+.button_contact {
+  color: #ffffff !important;
+  font-size: 1.5em;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #f14e4e;
+  padding: 7px;
+  margin: 10px;
+  border: 4px solid #f14e4e !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+
+.button_contact_email {
+    color: #ffffff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #f14e4e;
+    padding: 7px;
+    margin: 10px;
+    border: 4px solid #f14e4e !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    
+}
+
+.about_me_text {
+  font-size: 2em;
+  padding: 20px;
+  width: auto;
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   .navtoggle > ul {
     margin: 0;
+  }
+
+  #hero {
+    font-family: 'Playfair Display', serif;
+    margin: 0 40px;
+    width: auto;
+    font-size: 2em;
+    
+  }
+
+  .ex_sec {
+    margin: 80px 200px;
+    align-items: center;
+    display: block;
   }
 
   header {
@@ -386,6 +458,25 @@ X-large devices (1440px or larger)
   header {
     text-align: unset;
   }
+
+  #hero {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    width: auto;
+    font-size: 2em;
+    
+  }
+
+  .vocap_hero_img_vocap {
+    max-width: 400px;
+  }
+
+  .ex_sec {
+    margin: 80px 20px;
+    align-items: center;
+    display: block;
+  }
+
   .navtoggle {
     width: auto;
     margin-top: 4px;
@@ -427,4 +518,13 @@ X-large devices (1440px or larger)
 }
 footer {
   text-align: center;
+}
+
+.like_what_you_see_footer {
+  font-size: 4em;
+  font-family:'Playfair Display', serif;
+}
+
+.get_in_touch_footer {
+  font-size: 2em;
 }
