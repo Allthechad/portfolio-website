@@ -238,6 +238,12 @@ img {
   width: 100%;
 }
 
+.contact_form {
+  margin: auto;
+  display: block;
+  border: none;
+  }
+
 .explor_text_in_boxes {
   text-align: left;
   font-size: 14px;
