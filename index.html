@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8">
@@ -16,10 +17,10 @@
                   <div class="navtoggle" id="myNavtoggle">
                     <a href="index.html"><img id="logo" src="img/ck_Logo_2019_red.png" alt="Chad Ketcham Logo"></a>
                     <ul>
-                     <li><a href="#work">Work</a></li>
-                     <li><a href="about.html">About</a></li>
-                     <li><a href="contact.html">Contact</a></li>
-                     <li><a href="img/Ketcham_Chad_Resume_2019_V2.pdf" target="_blank">Resume</a></li>
+                     <li><a class="menu_links" href="#work">Work</a></li>
+                     <li><a class="menu_links" href="about.html">About</a></li>
+                     <li><a class="menu_links" href="contact.html">Contact</a></li>
+                     <li><a class="menu_links" href="img/Ketcham_Chad_Resume_2019_V2.pdf" target="_blank">Resume</a></li>
                     </ul>
                      <a href="javascript:void(0);" class="icon"
                       onclick="myNavtoggle()"><i class="fas fa-bars"></i></a>
@@ -43,47 +44,56 @@
                       <div class="module">
                         <div class="item1">
                           <picture>
-                            <source srcset="img/explor/explor_header_x4.jpg"
+                            <source srcset="img/explor_header.jpg"
                               media="(max-width:767px)">
                             <img src="img/explor/final_ui.gif" alt="EXPLOR">
                           </picture>
                         </div>
                         <div class="item2">
-                          <div class="col_text">
                             <h3>EXPLOR</h3>
                             <p>
                               EXPLOR is a photo, social scavenger hunt app.
                             </p>
-                            <a href="explor.html"><div class="info_button">Read more</div></a>
-                          </div>
-                        </div>
-
+                            <a href="explor.html"><div class="info_button">READ MORE</div></a>
+                      </div>
+                      </div>
         <!-- Vocap Box. -->  
-            <div class="module">
-              <div class="item1">
+        <div class="module">
+          <div class="item1">
               <picture>
                 <source srcset="img/vocap/vocap_hero.jpg" media="(max-width:767px)">
                 <img src="img/vocap/vocap_hero.jpg" alt="vocap">
               </picture>
-              </div>
               <div class="item2">
-              <div class="col_text">
               <h3>Vocap</h3>
               <p>
                 Vocap is a vocabulary study app.
               </p>
-              <div class="info_button"><a href="vocap.html">Read more</a></div>
+              <div class="info_button"><a href="vocap.html">READ MORE</a></div>
+            </div>
+            </div>
             </div>
           </div>
           </div>
-          </div>
-          </div>
-          </div>
           </main>
-      <script
+          <footer>
+              
+            
+              <div class="like_what_you_see_footer"> Like what you see?</div>
+              <div class="get_in_touch_footer">Get in touch!</div>
+               <a href="mailto:ketchamchad@gmail.com" class="button_contact_email"> Email me</a>
+                <div> Copyright 2019</div>
+              <div><a href="www.linkedin.com/in/chadketcham" ><i class="fab fa-linkedin-in"></i></a></div>
+              
+        
+            </footer>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script>
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"</script>
       <script src="./js/script.js"></script>
   </body>
 </html>

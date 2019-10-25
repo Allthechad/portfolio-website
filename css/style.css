@@ -93,10 +93,13 @@ nav > li {
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-
-.navtoggle.responsive {
-  position: relative;
+.menu_links {
+  padding: 0 10px;
 }
+
+/*.navtoggle.responsive {
+  position: relative;
+}*/
 
 .navtoggle > ul > li > a {
   text-transform: uppercase;
@@ -143,6 +146,28 @@ nav > li {
   padding: 0 0 10px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.item1 {
+  padding: 0;
+}
+
+.item2 {
+  text-align: center;
+  padding: 1em;
+  color: #0b0c10;
+}
+
+.module {
+  background: #c5c6c7;
+  margin: 1em;
+}
+
 .explor_head_pic {
   width: auto;
 }
@@ -155,16 +180,6 @@ nav > li {
   margin: 0 80px;
 }
 
-.row {
-  display: inline-block;
-  margin: 21px auto;
-  padding: 15px;
-}
-.row::after {
-  content: '';
-  clear: both;
-  display: table;
-}
 #work {
   margin: 0 auto;
   max-width: 1200px;
@@ -179,10 +194,10 @@ nav > li {
   margin-right: auto;
   padding: 15px;
 }
+
 h3 {
-  font-family: 'Playfair Display', serif;
   font-size: 2em;
-  font-weight: bolder;
+  font-weight: 900;
 }
 #about-page h3 {
   margin-top: 0;
@@ -200,6 +215,8 @@ h3 {
   align-items: center;
   margin: 0 40px;
 }
+
+
 header {
   width: 100%;
   background-color: #0b0c10;
@@ -220,11 +237,13 @@ header {
 img {
   width: 100%;
 }
+
 .explor_text_in_boxes {
   text-align: left;
   font-size: 14px;
   padding: 0 2em 2em 2em;
 }
+
 h2 {
   font-weight: bolder;
   font-size: 3em;
@@ -248,6 +267,8 @@ h2 {
 a {
   color: #ffffff;
   text-decoration: none; 
+  align-items: center;
+  font-weight: bolder;
 }
 a:hover {
   color: #ffffff;
@@ -276,13 +297,14 @@ a:focus {
 }
 
 .info_button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #f14e4e;
   color: #ffffff !important; /* needed to override the default link color */
   font-weight: 400;
+  margin: auto;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #812e2e; /* width of the border, type, color */
+  width: 10em;
 }
 
 .info_button:hover {
@@ -297,6 +319,12 @@ a:focus {
 Small devices (640px and under)
 ================================= */
 @media only screen and (max-width: 640px) {
+  .grid {
+    display: block;
+  }
+.module {
+  margin-top: 1em;
+}
 
   #hero {
     font-family: 'Playfair Display', serif;
@@ -330,6 +358,7 @@ Small devices (640px and under)
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
   .navtoggle > ul {
     margin: 0;
   }
@@ -482,34 +511,7 @@ X-large devices (1440px or larger)
     margin-top: 4px;
   }
 }
-.grid {
-  min-height: 100%;
-  display: grid;
-  align-items: center;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
-}
-.item1 {
-  grid-area: image;
-}
-.item2 {
-  grid-area: description;
-}
-.module {
-  /* Demo-Specific Styles */
-  background: #eaeaea;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  /* Flex Fallback */
-  margin-left: 5px;
-  margin-right: 5px;
-  flex: 1 1 200px;
-  grid-template:
-    'image'
-    'description';
-}
+
 /* If Grid is supported, remove the margin we set for the fallback */
 @supports (display: grid) {
   .module {
@@ -521,7 +523,8 @@ footer {
 }
 
 .like_what_you_see_footer {
-  font-size: 4em;
+  margin-top: 20px;
+  font-size: 2em;
   font-family:'Playfair Display', serif;
 }
 
