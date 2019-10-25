@@ -227,6 +227,12 @@ header {
   position: fixed;
 }
 
+.contact_form {
+margin: auto;
+display: block;
+border: none;
+}
+
 .prob_text {
   font-size: 2em;
   text-align: center;
